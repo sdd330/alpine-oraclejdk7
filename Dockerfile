@@ -28,3 +28,5 @@ RUN apk add --update wget bash curl ca-certificates && \
     ln -s $JAVA_HOME/bin/javac /usr/bin/javac && \
     rm -rf $JAVA_HOME/*src.zip && \
     rm /tmp/* /var/cache/apk/*
+    
+ENV PATH $PATH:$JAVA_HOME/bin
